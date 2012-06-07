@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @scenario.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @scenario.description %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @scenario.picture %>
+</p>
+
+<p>
+  <b>All gps:</b>
+  <%= @scenario.all_gps %>
+</p>
+
+<p>
+  <b>Gps per team:</b>
+  <%= @scenario.gps_per_team %>
+</p>
+
+<p>
+  <b>All camera:</b>
+  <%= @scenario.all_camera %>
+</p>
+
+<p>
+  <b>Camera per team:</b>
+  <%= @scenario.camera_per_team %>
+</p>
+
+<p>
+  <b>All phone:</b>
+  <%= @scenario.all_phone %>
+</p>
+
+<p>
+  <b>Phone per team:</b>
+  <%= @scenario.phone_per_team %>
+</p>
+
+
+<%= link_to 'Edit', edit_scenario_path(@scenario) %> |
+<%= link_to 'Back', scenarios_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Scenario:</b>
+  <%= @game_event.scenario %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @game_event.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @game_event.description %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @game_event.picture %>
+</p>
+
+<p>
+  <b>Buttons:</b>
+  <%= @game_event.buttons %>
+</p>
+
+<p>
+  <b>Task:</b>
+  <%= @game_event.task %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_event_path(@game_event) %> |
+<%= link_to 'Back', game_events_path %>

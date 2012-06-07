@@ -1,0 +1,53 @@
+<%= form_for(@scenario) do |f| %>
+  <% if @scenario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@scenario.errors.count, "error") %> prohibited this scenario from being saved:</h2>
+
+      <ul>
+      <% @scenario.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br />
+    <%= f.text_field :picture %>
+  </div>
+  <div class="field">
+    <%= f.label :all_gps %><br />
+    <%= f.check_box :all_gps %>
+  </div>
+  <div class="field">
+    <%= f.label :gps_per_team %><br />
+    <%= f.check_box :gps_per_team %>
+  </div>
+  <div class="field">
+    <%= f.label :all_camera %><br />
+    <%= f.check_box :all_camera %>
+  </div>
+  <div class="field">
+    <%= f.label :camera_per_team %><br />
+    <%= f.check_box :camera_per_team %>
+  </div>
+  <div class="field">
+    <%= f.label :all_phone %><br />
+    <%= f.check_box :all_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_per_team %><br />
+    <%= f.check_box :phone_per_team %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

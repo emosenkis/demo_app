@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  picture: MyString
+  all_gps: false
+  gps_per_team: false
+  all_camera: false
+  camera_per_team: false
+  all_phone: false
+  phone_per_team: false
+
+two:
+  title: MyString
+  description: MyText
+  picture: MyString
+  all_gps: false
+  gps_per_team: false
+  all_camera: false
+  camera_per_team: false
+  all_phone: false
+  phone_per_team: false

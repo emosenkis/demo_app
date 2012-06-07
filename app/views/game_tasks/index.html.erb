@@ -1,0 +1,29 @@
+<h1>Listing game_tasks</h1>
+
+<table>
+  <tr>
+    <th>Scenario</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Manager</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @game_tasks.each do |game_task| %>
+  <tr>
+    <td><%= game_task.scenario %></td>
+    <td><%= game_task.title %></td>
+    <td><%= game_task.description %></td>
+    <td><%= game_task.manager %></td>
+    <td><%= link_to 'Show', game_task %></td>
+    <td><%= link_to 'Edit', edit_game_task_path(game_task) %></td>
+    <td><%= link_to 'Destroy', game_task, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Game task', new_game_task_path %>

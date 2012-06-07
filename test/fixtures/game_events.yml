@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  scenario: 1
+  title: MyString
+  description: MyText
+  picture: MyString
+  buttons: MyString
+  task: 1
+
+two:
+  scenario: 1
+  title: MyString
+  description: MyText
+  picture: MyString
+  buttons: MyString
+  task: 1

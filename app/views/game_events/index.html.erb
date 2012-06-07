@@ -1,0 +1,33 @@
+<h1>Listing game_events</h1>
+
+<table>
+  <tr>
+    <th>Scenario</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Picture</th>
+    <th>Buttons</th>
+    <th>Task</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @game_events.each do |game_event| %>
+  <tr>
+    <td><%= game_event.scenario %></td>
+    <td><%= game_event.title %></td>
+    <td><%= game_event.description %></td>
+    <td><%= game_event.picture %></td>
+    <td><%= game_event.buttons %></td>
+    <td><%= game_event.task %></td>
+    <td><%= link_to 'Show', game_event %></td>
+    <td><%= link_to 'Edit', edit_game_event_path(game_event) %></td>
+    <td><%= link_to 'Destroy', game_event, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Game event', new_game_event_path %>

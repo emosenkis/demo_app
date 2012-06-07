@@ -1,4 +1,10 @@
 DemoApp::Application.routes.draw do
+  resources :game_tasks
+
+  resources :game_events
+
+  resources :scenarios
+
   resources :microposts
 
   resources :users
